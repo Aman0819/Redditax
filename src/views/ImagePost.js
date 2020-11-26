@@ -1,5 +1,5 @@
-import React from "react";
-import "./imagePost.css";
+import React from 'react';
+import '../assets/imagePost.css';
 
 const ImagePost = ({ file }) => {
   if (file.data.preview) {
@@ -33,7 +33,7 @@ const ImagePost = ({ file }) => {
               <i class="fas fa-arrow-up"></i>
             </h4>
             <a
-              href={"https://reddit.com" + file.data.permalink}
+              href={'https://reddit.com' + file.data.permalink}
               target="_blank"
               rel="noopener noreferrer"
             >

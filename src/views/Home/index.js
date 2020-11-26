@@ -1,6 +1,8 @@
-import React from "react";
-import SubredditCard from "./SubredditCard";
-import subreddits from "../subreddits";
+import React from 'react';
+// Import Custom Components
+import Header from './Header';
+import SubredditCard from './SubredditCard';
+import subreddits from '../../static/subreddits';
 
 function createCard(subreddit) {
   return (
@@ -15,9 +17,10 @@ function createCard(subreddit) {
     />
   );
 }
-function CardGrid() {
+function CardGrid({ className, ...rest }) {
   return (
-    <div>
+    <div className={className}>
+      <Header title="Browse Some From Here" />
       <div className="card-container">{subreddits.map(createCard)}</div>
     </div>
   );
